@@ -91,10 +91,16 @@ console.log(
 let x = 10;
 let y = 2;
 
-if (x === 8 || y === 8 || x + y === 8 || x - y === 8 || y + x === 8 || y - x === 8){
+if (
+  x === 8 ||
+  y === 8 ||
+  x + y === 8 ||
+  x - y === 8 ||
+  y + x === 8 ||
+  y - x === 8
+) {
   console.log("Almeno una delle condizioni richieste è stata soddisfatta\n");
-} 
-else{
+} else {
   console.log("Nessuna delle condizioni richieste è stata soddisfatta\n");
 }
 
@@ -104,7 +110,9 @@ C'è una promozione in corso: se il totale del carrello supera 50, l'utente ha d
 Crea un algoritmo che determini l'ammontare totale che deve essere addebitato all'utente per il checkout.
 */
 /* SCRIVI QUI LA TUA RISPOSTA */
-console.log("Stai lavorando su un sito di e-commerce. Stai salvando il saldo totale del carrello dell'utente in una variabile 'totalShoppingCart'.\nC'è una promozione in corso: se il totale del carrello supera 50, l'utente ha diritto alla spedizione gratuita\n(altrimenti la spedizione ha un costo fisso pari a 10).\nCrea un algoritmo che determini l'ammontare totale che deve essere addebitato all'utente per il checkout.\n");
+console.log(
+  "Stai lavorando su un sito di e-commerce. Stai salvando il saldo totale del carrello dell'utente in una variabile 'totalShoppingCart'.\nC'è una promozione in corso: se il totale del carrello supera 50, l'utente ha diritto alla spedizione gratuita\n(altrimenti la spedizione ha un costo fisso pari a 10).\nCrea un algoritmo che determini l'ammontare totale che deve essere addebitato all'utente per il checkout.\n"
+);
 
 let totalShoppingCart = 32;
 let shippingCost = 10;
@@ -114,8 +122,11 @@ if (totalShoppingCart >= 50) {
 } else {
   console.log(
     "L'ammontare totale del tuo carrello è di euro: " +
-      totalShoppingCart + "\nCosti aggiuntivi di spedizione: " + shippingCost +
-      "\nAncora 8 euro per usufruire della spedizione gratuita!\n");
+      totalShoppingCart +
+      "\nCosti aggiuntivi di spedizione: " +
+      shippingCost +
+      "\nAncora 8 euro per usufruire della spedizione gratuita!\n"
+  );
 }
 
 /* ESERCIZIO EXTRA 3
@@ -137,7 +148,9 @@ if (totalShoppingCart >= 50) {
 } else {
   console.log(
     "\nL'ammontare totale del tuo carrello è di euro: " +
-      totalShoppingCart + "\nCosti aggiuntivi di spedizione: " + shippingCost +
+      totalShoppingCart +
+      "\nCosti aggiuntivi di spedizione: " +
+      shippingCost +
       " Ancora 24.4 euro per usufruire della spedizione gratuita!"
   );
 }
@@ -167,17 +180,14 @@ console.log("\nGender: " + gender + "\n");
 */
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-for(let hundred = 1; hundred <= 100; hundred ++){
-  if (hundred % 3 === 0 && hundred % 5 === 0){
+for (let hundred = 1; hundred <= 100; hundred++) {
+  if (hundred % 3 === 0 && hundred % 5 === 0) {
     console.log("FizzBuzz");
-  }
-  else if(hundred % 3 === 0){
+  } else if (hundred % 3 === 0) {
     console.log("Fizz");
-  }
-  else if(hundred % 5 === 0){
+  } else if (hundred % 5 === 0) {
     console.log("Buzz");
-  }
-  else{
+  } else {
     console.log(hundred);
   }
 }
