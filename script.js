@@ -11,10 +11,10 @@ console.log(
 let numberOne = 56;
 let numberTwo = 24 + "\n";
 
-if (numberTwo < numberOne) {
-  console.log("24 è minore di 56");
-} else {
+if (numberTwo > numberOne) {
   console.log("24 è maggiore di 56\n");
+} else {
+  console.log("56 è maggiore di 24\n");
 }
 
 /*
@@ -29,26 +29,22 @@ num >= 20 - mostra in console "Huge"
 */
 /* SCRIVI QUI LA TUA RISPOSTA */
 console.log(
-  "Crea un blocco condizionale if/else per mostrare in console il messaggio corretto in ogni condizione:\n"
+  "Crea un blocco condizionale if/else per mostrare in console il messaggio corretto in ogni condizione:\nnum < 5 - mostra in console 'Tiny'\nnum < 10 - mostra in console 'Small'\nnum < 15 - mostra in console 'Medium'\nnum < 20 - mostra in console 'Large'\nnum >= 20 - mostra in console 'Huge'\n"
 );
 
 let numberThree = 19;
 
-if (numberThree < 5){
-  console.log("Tiny\n")
+if (numberThree < 5) {
+  console.log("Tiny\n");
+} else if (numberThree < 10) {
+  console.log("Small\n");
+} else if (numberThree < 15) {
+  console.log("Medium\n");
+} else if (numberThree < 20) {
+  console.log("Large\n");
+} else {
+  console.log(numberThree >= 20 + "Huge\n");
 }
-else if (numberThree < 10){
-  console.log("Small\n")
-}
-else if (numberThree < 15){
-  console.log("Medium\n")
-}
-else if (numberThree < 20){
-  console.log("Large\n")
-}
-else{
-  console.log(numberThree >= 20 + "Huge\n")
-};
 
 //ESERCIZI SUI CICLI:
 
@@ -56,27 +52,32 @@ else{
   Mostra i numeri da 0 a 10 (incluso) in ordine ascendente, ma evitando di mostrare i numeri 3 e 8 (suggerimento: ripassa l'uso di "continue").
 */
 /* SCRIVI QUI LA TUA RISPOSTA */
-  console.log("Mostra i numeri da 0 a 10 (incluso) in ordine ascendente,\n ma evitando di mostrare i numeri 3 e 8 (suggerimento: ripassa l'uso di 'continue'):\n");
+console.log(
+  "Mostra i numeri da 0 a 10 (incluso) in ordine ascendente,\n ma evitando di mostrare i numeri 3 e 8 (suggerimento: ripassa l'uso di 'continue'):\n"
+);
 
-  for(let loop = 0; loop <= 10; loop ++){
-    if(loop === 3 || loop === 8){
-      continue;
-    }
-    console.log(loop + "\n")
-  };
+for (let loop = 0; loop <= 10; loop++) {
+  if (loop === 3 || loop === 8) {
+    continue;
+  }
+  console.log(loop);
+}
 
 /* ESERCIZIO 4
   Scrivi un ciclo in JavaScript per iterare da 0 a 15. Per ciascun elemento, il ciclo deve controllare the il valore corrente sia pari o dispari, e mostrare il risultato in console.
 */
 /* SCRIVI QUI LA TUA RISPOSTA */
-console.log("Scrivi un ciclo in JavaScript per iterare da 0 a 15. Per ciascun elemento,\n il ciclo deve controllare the il valore corrente sia pari o dispari, e mostrare il risultato in console.\n")
+console.log(
+  "\nScrivi un ciclo in JavaScript per iterare da 0 a 15. Per ciascun elemento,\nil ciclo deve controllare the il valore corrente sia pari o dispari, e mostrare il risultato in console.\n"
+);
 
-for(let otherLoop = 0; otherLoop <= 15; otherLoop ++){
-  console.log(otherLoop)
+for (let otherLoop = 0; otherLoop <= 15; otherLoop++) {
+  if (otherLoop % 2 === 0) {
+    console.log("Pari");
+  } else {
+    console.log("Dispari");
+  }
 }
-
-
-
 
 //ESERCIZI EXTRA NON OBBLIGATORI
 
@@ -85,7 +86,7 @@ for(let otherLoop = 0; otherLoop <= 15; otherLoop ++){
 */
 /* SCRIVI QUI LA TUA RISPOSTA */
 console.log(
-  "Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se\nla loro addizione/sottrazione sia uguale a 8\n"
+  "\nScrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se\nla loro addizione/sottrazione sia uguale a 8\n"
 );
 
 let x = 10;
@@ -108,15 +109,11 @@ Crea un algoritmo che determini l'ammontare totale che deve essere addebitato al
 */
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-
-
 /* ESERCIZIO EXTRA 3
   Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
   Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando, usando l'algoritmo del codice precedente, se le spedizioni siano gratuite oppure no e e calcolando il totale.
 */
 /* SCRIVI QUI LA TUA RISPOSTA */
-
-
 
 /*  ESERCIZIO EXTRA 4
   Usa un operatore ternaio per assegnare ad una variabile chiamata "gender" i valori "male" o "female".
@@ -124,8 +121,6 @@ Crea un algoritmo che determini l'ammontare totale che deve essere addebitato al
   Es. se isMale e' vero, il valore di gender deve essere "male"
 */
 /* SCRIVI QUI LA TUA RISPOSTA */
-
-
 
 /* ESERCIZIO EXTRA 5
   Scrivi un algoritmo che iteri i numeri da 1 a 100, stampandoli in console. Se un valore tuttavia è multiplo di 3 (operatore modulo!), stampa al suo posto la parola "Fizz" e se il numero è multiplo di 5, stampa "Buzz". Se le condizioni si verificano entrambe, stampa "FizzBuzz".
