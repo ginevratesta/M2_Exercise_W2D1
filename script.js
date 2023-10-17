@@ -173,12 +173,13 @@ Con la variabile booleana dichiarata prima, in questo caso con valore di "falso"
 condizione + if true(?) "this" else(:) "that" ed infine stampiamo con console.log.
 */
 
-console.log("\nGender: " + gender + "\n");
+console.log("Gender: " + gender + "\n");
 
 /* ESERCIZIO EXTRA 5
   Scrivi un algoritmo che iteri i numeri da 1 a 100, stampandoli in console. Se un valore tuttavia è multiplo di 3 (operatore modulo!), stampa al suo posto la parola "Fizz" e se il numero è multiplo di 5, stampa "Buzz". Se le condizioni si verificano entrambe, stampa "FizzBuzz".
 */
 /* SCRIVI QUI LA TUA RISPOSTA */
+console.log("Scrivi un algoritmo che iteri i numeri da 1 a 100, stampandoli in console.\nSe un valore tuttavia è multiplo di 3 (operatore modulo!),\nstampa al suo posto la parola 'Fizz' e se il numero è multiplo di 5, stampa 'Buzz'.\nSe le condizioni si verificano entrambe, stampa 'FizzBuzz'.\n");
 
 for (let hundred = 1; hundred <= 100; hundred++) {
   if (hundred % 3 === 0 && hundred % 5 === 0) {
