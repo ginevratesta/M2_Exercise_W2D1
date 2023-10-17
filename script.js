@@ -12,9 +12,9 @@ let numberOne = 56;
 let numberTwo = 24 + "\n";
 
 if (numberTwo > numberOne) {
-  console.log("24 è maggiore di 56\n");
+  console.log(numberTwo + "E' il numero più grande\n");
 } else {
-  console.log("56 è maggiore di 24\n");
+  console.log(numberOne + "E' il numero più grande\n");
 }
 
 /*
