@@ -1,10 +1,31 @@
-//ESERCIZI SUGLI IF: 
+//ESERCIZI SUGLI IF:
 
 /* ESERCIZIO 1
  Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se
  la loro addizione/sottrazione sia uguale a 8.
 */
 /* SCRIVI QUI LA TUA RISPOSTA */
+console.log(
+  "Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se\nla loro addizione/sottrazione sia uguale a 8\n"
+);
+
+let x = 10;
+let y = 2 + "\n";
+
+if(x === 8){
+  console.log("Il valore di x è 8")
+}
+else if(y === 8){
+  console.log("Il valore di y è 8")
+}
+else if(x - y === 8){
+  console.log("La sottrazione tra x e y ha valore 8")
+}
+else{
+  console.log("Né x né y hanno come valore 8")
+};
+
+
 
 /*
 ESERCIZIO 2
@@ -19,7 +40,7 @@ ESERCIZIO 2
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-//ESERCIZI SUI CICLI: 
+//ESERCIZI SUI CICLI:
 
 /* ESERCIZIO 3
   Mostra i numeri da 0 a 10 (incluso) in ordine ascendente, ma evitando di mostrare i numeri 3 e 8 (suggerimento: ripassa l'uso di "continue").
