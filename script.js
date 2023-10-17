@@ -9,7 +9,7 @@ console.log(
 );
 
 let numberOne = 56;
-let numberTwo = 24 + "\n";
+let numberTwo = 24;
 
 if (numberTwo > numberOne) {
   console.log(numberTwo + " E' il numero più grande\n");
