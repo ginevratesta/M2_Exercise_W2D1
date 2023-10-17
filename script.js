@@ -20,7 +20,6 @@ if (numberTwo > numberOne) {
 /*
 ESERCIZIO 2
 Crea un blocco condizionale if/else per mostrare in console il messaggio corretto in ogni condizione.
-
 num < 5 - mostra in console "Tiny"
 num < 10 - mostra in console "Small"
 num < 15 - mostra in console "Medium"
@@ -90,16 +89,14 @@ console.log(
 );
 
 let x = 10;
-let y = 2 + "\n";
+let y = 2;
 
 if (x === 8) {
-  console.log("Il valore di x è 8");
+  console.log("Il valore di x è 8\n");
 } else if (y === 8) {
-  console.log("Il valore di y è 8");
-} else if (x - y === 8) {
-  console.log("La sottrazione tra x e y ha valore 8");
+  console.log("Il valore di y è 8\n");
 } else {
-  console.log("Né x né y hanno come valore 8");
+  console.log((x - y === 8) + "La sottrazione tra x e y ha come valore 8");
 }
 
 /* ESERCIZIO EXTRA 2
@@ -109,11 +106,42 @@ Crea un algoritmo che determini l'ammontare totale che deve essere addebitato al
 */
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+let totalShoppingCart = 32;
+let shippingCost = 10;
+
+if (totalShoppingCart >= 50) {
+  console.log("Spedizione gratuita\n");
+} else {
+  console.log(
+    "L'ammontare totale del tuo carrello è di euro: " +
+      (totalShoppingCart + shippingCost) +
+      "\nAncora 8 euro per usufruire della spedizione gratuita!\n"
+  );
+}
+
 /* ESERCIZIO EXTRA 3
   Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
   Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando, usando l'algoritmo del codice precedente, se le spedizioni siano gratuite oppure no e e calcolando il totale.
 */
 /* SCRIVI QUI LA TUA RISPOSTA */
+console.log(
+  "Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.\nModifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando, usando l'algoritmo del codice precedente,\nse le spedizioni siano gratuite oppure no e e calcolando il totale."
+);
+
+let blackFridayToday = true; //Dichiariamo una variabile booleana che useremo come condizione per poter applicare lo sconto dato da uno specifico evento.
+
+if (blackFridayToday) {
+  totalShoppingCart = totalShoppingCart - (totalShoppingCart * 0.2); //Calcoliamo il valore della variabile applicando lo sconto del 20%
+}
+if (totalShoppingCart >= 50) {
+  console.log("Spedizione gratuita\n");
+} else {
+  console.log(
+    "L'ammontare totale del tuo carrello è di euro: " +
+      totalShoppingCart +
+      " Ancora 24.4 euro per usufruire della spedizione gratuita!"
+  );
+}
 
 /*  ESERCIZIO EXTRA 4
   Usa un operatore ternaio per assegnare ad una variabile chiamata "gender" i valori "male" o "female".
@@ -121,6 +149,21 @@ Crea un algoritmo che determini l'ammontare totale che deve essere addebitato al
   Es. se isMale e' vero, il valore di gender deve essere "male"
 */
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+console.log("\nUsa un operatore ternaio per assegnare ad una variabile chiamata 'gender' i valori 'male' o 'female'.\nLa scelta deve essere basata sul valore di un'altra variabile booleana chiamata isMale.\nEs. se isMale e' vero, il valore di gender deve essere 'male'\n");
+
+let isMale = false; //Dichiariamo una variabile booleana che useremo come condizione
+
+let gender = isMale ? "Male" : "Female"; /*Dichiariamo una variabile e definiamone il valore.
+Con la variabile booleana dichiarata prima, in questo caso con valore di "falso", affianchiamo la formula dell'operatore ternaio:
+condizione + if true(?) "this" else(:) "that" ed infine stampiamo con console.log.
+*/
+
+console.log("\nGender" + gender);
+
+
+
+
 
 /* ESERCIZIO EXTRA 5
   Scrivi un algoritmo che iteri i numeri da 1 a 100, stampandoli in console. Se un valore tuttavia è multiplo di 3 (operatore modulo!), stampa al suo posto la parola "Fizz" e se il numero è multiplo di 5, stampa "Buzz". Se le condizioni si verificano entrambe, stampa "FizzBuzz".
