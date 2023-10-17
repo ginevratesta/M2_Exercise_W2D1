@@ -12,9 +12,9 @@ let numberOne = 56;
 let numberTwo = 24 + "\n";
 
 if (numberTwo > numberOne) {
-  console.log(numberTwo + "E' il numero più grande\n");
+  console.log(numberTwo + " E' il numero più grande\n");
 } else {
-  console.log(numberOne + "E' il numero più grande\n");
+  console.log(numberOne + " E' il numero più grande\n");
 }
 
 /*
@@ -85,17 +85,17 @@ for (let otherLoop = 0; otherLoop <= 15; otherLoop++) {
 */
 /* SCRIVI QUI LA TUA RISPOSTA */
 console.log(
-  "\nScrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se\nla loro addizione/sottrazione sia uguale a 8\n"
+  "\nScrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se\nla loro addizione/sottrazione sia uguale a 8:\n"
 );
 
 let x = 10;
 let y = 2;
 
-if (x === 8 || y === 8 || x + y === 8 || x - y === 8){
-  console.log("Almeno una delle condizioni richieste è stata soddisfatta");
+if (x === 8 || y === 8 || x + y === 8 || x - y === 8 || y + x === 8 || y - x === 8){
+  console.log("Almeno una delle condizioni richieste è stata soddisfatta\n");
 } 
 else{
-  console.log("Nessuna delle condizioni richieste è stata soddisfatta");
+  console.log("Nessuna delle condizioni richieste è stata soddisfatta\n");
 }
 
 /* ESERCIZIO EXTRA 2
@@ -104,6 +104,7 @@ C'è una promozione in corso: se il totale del carrello supera 50, l'utente ha d
 Crea un algoritmo che determini l'ammontare totale che deve essere addebitato all'utente per il checkout.
 */
 /* SCRIVI QUI LA TUA RISPOSTA */
+console.log("Stai lavorando su un sito di e-commerce. Stai salvando il saldo totale del carrello dell'utente in una variabile 'totalShoppingCart'.\nC'è una promozione in corso: se il totale del carrello supera 50, l'utente ha diritto alla spedizione gratuita\n(altrimenti la spedizione ha un costo fisso pari a 10).\nCrea un algoritmo che determini l'ammontare totale che deve essere addebitato all'utente per il checkout.\n");
 
 let totalShoppingCart = 32;
 let shippingCost = 10;
@@ -155,14 +156,12 @@ console.log(
 
 let isMale = false; //Dichiariamo una variabile booleana che useremo come condizione
 
-let gender = isMale
-  ? "Male"
-  : "Female"; /*Dichiariamo una variabile e definiamone il valore.
+let gender = isMale ? "Male" : "Female"; /*Dichiariamo una variabile e definiamone il valore.
 Con la variabile booleana dichiarata prima, in questo caso con valore di "falso", affianchiamo la formula dell'operatore ternaio:
 condizione + if true(?) "this" else(:) "that" ed infine stampiamo con console.log.
 */
 
-console.log("\nGender " + gender);
+console.log("\nGender: " + gender + "\n");
 
 /* ESERCIZIO EXTRA 5
   Scrivi un algoritmo che iteri i numeri da 1 a 100, stampandoli in console. Se un valore tuttavia è multiplo di 3 (operatore modulo!), stampa al suo posto la parola "Fizz" e se il numero è multiplo di 5, stampa "Buzz". Se le condizioni si verificano entrambe, stampa "FizzBuzz".
