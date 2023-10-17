@@ -114,9 +114,8 @@ if (totalShoppingCart >= 50) {
 } else {
   console.log(
     "L'ammontare totale del tuo carrello è di euro: " +
-      (totalShoppingCart + shippingCost) +
-      "\nAncora 8 euro per usufruire della spedizione gratuita!\n"
-  );
+      totalShoppingCart + "\nCosti aggiuntivi di spedizione: " + shippingCost +
+      "\nAncora 8 euro per usufruire della spedizione gratuita!\n");
 }
 
 /* ESERCIZIO EXTRA 3
@@ -138,7 +137,7 @@ if (totalShoppingCart >= 50) {
 } else {
   console.log(
     "\nL'ammontare totale del tuo carrello è di euro: " +
-      totalShoppingCart +
+      totalShoppingCart + "\nCosti aggiuntivi di spedizione: " + shippingCost +
       " Ancora 24.4 euro per usufruire della spedizione gratuita!"
   );
 }
