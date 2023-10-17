@@ -173,3 +173,18 @@ console.log("\nGender " + gender);
   Scrivi un algoritmo che iteri i numeri da 1 a 100, stampandoli in console. Se un valore tuttavia è multiplo di 3 (operatore modulo!), stampa al suo posto la parola "Fizz" e se il numero è multiplo di 5, stampa "Buzz". Se le condizioni si verificano entrambe, stampa "FizzBuzz".
 */
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+for(let hundred = 1; hundred <= 100; hundred ++){
+  if (hundred % 3 === 0 && hundred % 5 === 0){
+    console.log("FizzBuzz");
+  }
+  else if(hundred % 3 === 0){
+    console.log("Fizz");
+  }
+  else if(hundred % 5 === 0){
+    console.log("Buzz");
+  }
+  else{
+    console.log(hundred);
+  }
+}
