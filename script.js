@@ -95,8 +95,12 @@ if (x === 8) {
   console.log("Il valore di x è 8\n");
 } else if (y === 8) {
   console.log("Il valore di y è 8\n");
+} else if (x - y === 8) {
+  console.log("La sottrazione tra x e y ha come valore 8\n");
 } else {
-  console.log((x - y === 8) + "La sottrazione tra x e y ha come valore 8");
+  console.log(
+    "x e y sono diversi da 8 e sia la loro addizzione che la loro sottrazione non hanno come valore 8\n"
+  );
 }
 
 /* ESERCIZIO EXTRA 2
@@ -131,13 +135,13 @@ console.log(
 let blackFridayToday = true; //Dichiariamo una variabile booleana che useremo come condizione per poter applicare lo sconto dato da uno specifico evento.
 
 if (blackFridayToday) {
-  totalShoppingCart = totalShoppingCart - (totalShoppingCart * 0.2); //Calcoliamo il valore della variabile applicando lo sconto del 20%
+  totalShoppingCart = totalShoppingCart - totalShoppingCart * 0.2; //Calcoliamo il valore della variabile applicando lo sconto del 20%
 }
 if (totalShoppingCart >= 50) {
   console.log("Spedizione gratuita\n");
 } else {
   console.log(
-    "L'ammontare totale del tuo carrello è di euro: " +
+    "\nL'ammontare totale del tuo carrello è di euro: " +
       totalShoppingCart +
       " Ancora 24.4 euro per usufruire della spedizione gratuita!"
   );
@@ -150,20 +154,20 @@ if (totalShoppingCart >= 50) {
 */
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-console.log("\nUsa un operatore ternaio per assegnare ad una variabile chiamata 'gender' i valori 'male' o 'female'.\nLa scelta deve essere basata sul valore di un'altra variabile booleana chiamata isMale.\nEs. se isMale e' vero, il valore di gender deve essere 'male'\n");
+console.log(
+  "\nUsa un operatore ternaio per assegnare ad una variabile chiamata 'gender' i valori 'male' o 'female'.\nLa scelta deve essere basata sul valore di un'altra variabile booleana chiamata isMale.\nEs. se isMale e' vero, il valore di gender deve essere 'male'\n"
+);
 
 let isMale = false; //Dichiariamo una variabile booleana che useremo come condizione
 
-let gender = isMale ? "Male" : "Female"; /*Dichiariamo una variabile e definiamone il valore.
+let gender = isMale
+  ? "Male"
+  : "Female"; /*Dichiariamo una variabile e definiamone il valore.
 Con la variabile booleana dichiarata prima, in questo caso con valore di "falso", affianchiamo la formula dell'operatore ternaio:
 condizione + if true(?) "this" else(:) "that" ed infine stampiamo con console.log.
 */
 
-console.log("\nGender" + gender);
-
-
-
-
+console.log("\nGender " + gender);
 
 /* ESERCIZIO EXTRA 5
   Scrivi un algoritmo che iteri i numeri da 1 a 100, stampandoli in console. Se un valore tuttavia è multiplo di 3 (operatore modulo!), stampa al suo posto la parola "Fizz" e se il numero è multiplo di 5, stampa "Buzz". Se le condizioni si verificano entrambe, stampa "FizzBuzz".
