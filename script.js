@@ -72,9 +72,9 @@ console.log(
 
 for (let otherLoop = 0; otherLoop <= 15; otherLoop++) {
   if (otherLoop % 2 === 0) {
-    console.log("Pari");
+    console.log("Pari " + otherLoop);
   } else {
-    console.log("Dispari");
+    console.log("Dispari " + otherLoop);
   }
 }
 
@@ -91,16 +91,11 @@ console.log(
 let x = 10;
 let y = 2;
 
-if (x === 8) {
-  console.log("Il valore di x è 8\n");
-} else if (y === 8) {
-  console.log("Il valore di y è 8\n");
-} else if (x - y === 8) {
-  console.log("La sottrazione tra x e y ha come valore 8\n");
-} else {
-  console.log(
-    "x e y sono diversi da 8 e sia la loro addizzione che la loro sottrazione non hanno come valore 8\n"
-  );
+if (x === 8 || y === 8 || x + y === 8 || x - y === 8){
+  console.log("Almeno una delle condizioni richieste è stata soddisfatta");
+} 
+else{
+  console.log("Nessuna delle condizioni richieste è stata soddisfatta");
 }
 
 /* ESERCIZIO EXTRA 2
