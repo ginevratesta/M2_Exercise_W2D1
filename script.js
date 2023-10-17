@@ -54,7 +54,7 @@ else{
 };
 
 if(numberThree < 20){
-  console.log("Largen\n")
+  console.log("Large\n")
 }
 else{
   console.log("Not large\n")
