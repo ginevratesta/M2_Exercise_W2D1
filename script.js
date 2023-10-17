@@ -19,72 +19,64 @@ if (numberTwo < numberOne) {
 
 /*
 ESERCIZIO 2
-  Crea un blocco condizionale if/else per mostrare in console il messaggio corretto in ogni condizione.
+Crea un blocco condizionale if/else per mostrare in console il messaggio corretto in ogni condizione.
 
-  num < 5 - mostra in console "Tiny"
-  num < 10 - mostra in console "Small"
-  num < 15 - mostra in console "Medium"
-  num < 20 - mostra in console "Large"
-  num >= 20 - mostra in console "Huge"
+num < 5 - mostra in console "Tiny"
+num < 10 - mostra in console "Small"
+num < 15 - mostra in console "Medium"
+num < 20 - mostra in console "Large"
+num >= 20 - mostra in console "Huge"
 */
-console.log("Crea un blocco condizionale if/else per mostrare in console il messaggio corretto in ogni condizione:\n")
+/* SCRIVI QUI LA TUA RISPOSTA */
+console.log(
+  "Crea un blocco condizionale if/else per mostrare in console il messaggio corretto in ogni condizione:\n"
+);
 
-let numberThree = 4;
-let numberFour = 20 + "\n";
+let numberThree = 19;
 
-if(numberThree < 5){
+if (numberThree < 5){
   console.log("Tiny\n")
 }
-else{
-  console.log("Not tiny\n")
-};
-
-if(numberThree < 10){
+else if (numberThree < 10){
   console.log("Small\n")
 }
-else{
-  console.log("Not small\n")
-};
-
-if(numberThree < 15){
+else if (numberThree < 15){
   console.log("Medium\n")
 }
-else{
-  console.log("Not medium\n")
-};
-
-if(numberThree < 20){
+else if (numberThree < 20){
   console.log("Large\n")
 }
 else{
-  console.log("Not large\n")
+  console.log(numberThree >= 20 + "Huge\n")
 };
-
-if(numberFour >= 20){
-  console.log("Huge\n")
-}
-else{
-  console.log("Not huge\n")
-}
-
-
-
-
-/* SCRIVI QUI LA TUA RISPOSTA */
 
 //ESERCIZI SUI CICLI:
 
 /* ESERCIZIO 3
   Mostra i numeri da 0 a 10 (incluso) in ordine ascendente, ma evitando di mostrare i numeri 3 e 8 (suggerimento: ripassa l'uso di "continue").
 */
-
 /* SCRIVI QUI LA TUA RISPOSTA */
+  console.log("Mostra i numeri da 0 a 10 (incluso) in ordine ascendente,\n ma evitando di mostrare i numeri 3 e 8 (suggerimento: ripassa l'uso di 'continue'):\n");
 
-/* ESERCIZIO 11
+  for(let loop = 0; loop <= 10; loop ++){
+    if(loop === 3 || loop === 8){
+      continue;
+    }
+    console.log(loop + "\n")
+  };
+
+/* ESERCIZIO 4
   Scrivi un ciclo in JavaScript per iterare da 0 a 15. Per ciascun elemento, il ciclo deve controllare the il valore corrente sia pari o dispari, e mostrare il risultato in console.
 */
-
 /* SCRIVI QUI LA TUA RISPOSTA */
+console.log("Scrivi un ciclo in JavaScript per iterare da 0 a 15. Per ciascun elemento,\n il ciclo deve controllare the il valore corrente sia pari o dispari, e mostrare il risultato in console.\n")
+
+for(let otherLoop = 0; otherLoop <= 15; otherLoop ++){
+  console.log(otherLoop)
+}
+
+
+
 
 //ESERCIZI EXTRA NON OBBLIGATORI
 
@@ -114,24 +106,28 @@ Stai lavorando su un sito di e-commerce. Stai salvando il saldo totale del carre
 C'è una promozione in corso: se il totale del carrello supera 50, l'utente ha diritto alla spedizione gratuita (altrimenti la spedizione ha un costo fisso pari a 10).
 Crea un algoritmo che determini l'ammontare totale che deve essere addebitato all'utente per il checkout.
 */
-
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+
 
 /* ESERCIZIO EXTRA 3
   Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
   Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando, usando l'algoritmo del codice precedente, se le spedizioni siano gratuite oppure no e e calcolando il totale.
 */
-
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+
 
 /*  ESERCIZIO EXTRA 4
   Usa un operatore ternaio per assegnare ad una variabile chiamata "gender" i valori "male" o "female".
   La scelta deve essere basata sul valore di un'altra variabile booleana chiamata isMale.
   Es. se isMale e' vero, il valore di gender deve essere "male"
 */
-
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+
 
 /* ESERCIZIO EXTRA 5
   Scrivi un algoritmo che iteri i numeri da 1 a 100, stampandoli in console. Se un valore tuttavia è multiplo di 3 (operatore modulo!), stampa al suo posto la parola "Fizz" e se il numero è multiplo di 5, stampa "Buzz". Se le condizioni si verificano entrambe, stampa "FizzBuzz".
 */
+/* SCRIVI QUI LA TUA RISPOSTA */
