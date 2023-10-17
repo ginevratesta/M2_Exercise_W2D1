@@ -1,31 +1,21 @@
 //ESERCIZI SUGLI IF:
 
 /* ESERCIZIO 1
- Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se
- la loro addizione/sottrazione sia uguale a 8.
+Scrivi un algoritmo per trovare il più grande tra due numeri interi.
 */
 /* SCRIVI QUI LA TUA RISPOSTA */
 console.log(
-  "Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se\nla loro addizione/sottrazione sia uguale a 8\n"
+  "Scrivi un algoritmo per trovare il più grande tra due numeri interi:\n"
 );
 
-let x = 10;
-let y = 2 + "\n";
+let numberOne = 56;
+let numberTwo = 24 + "\n";
 
-if(x === 8){
-  console.log("Il valore di x è 8")
+if (numberTwo < numberOne) {
+  console.log("24 è minore di 56");
+} else {
+  console.log("24 è maggiore di 56\n");
 }
-else if(y === 8){
-  console.log("Il valore di y è 8")
-}
-else if(x - y === 8){
-  console.log("La sottrazione tra x e y ha valore 8")
-}
-else{
-  console.log("Né x né y hanno come valore 8")
-};
-
-
 
 /*
 ESERCIZIO 2
@@ -37,6 +27,48 @@ ESERCIZIO 2
   num < 20 - mostra in console "Large"
   num >= 20 - mostra in console "Huge"
 */
+console.log("Crea un blocco condizionale if/else per mostrare in console il messaggio corretto in ogni condizione:\n")
+
+let numberThree = 4;
+let numberFour = 20 + "\n";
+
+if(numberThree < 5){
+  console.log("Tiny\n")
+}
+else{
+  console.log("Not tiny\n")
+};
+
+if(numberThree < 10){
+  console.log("Small\n")
+}
+else{
+  console.log("Not small\n")
+};
+
+if(numberThree < 15){
+  console.log("Medium\n")
+}
+else{
+  console.log("Not medium\n")
+};
+
+if(numberThree < 20){
+  console.log("Largen\n")
+}
+else{
+  console.log("Not large\n")
+};
+
+if(numberFour >= 20){
+  console.log("Huge\n")
+}
+else{
+  console.log("Not huge\n")
+}
+
+
+
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
@@ -59,8 +91,23 @@ ESERCIZIO 2
 /* ESERCIZIO EXTRA 1
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
 */
-
 /* SCRIVI QUI LA TUA RISPOSTA */
+console.log(
+  "Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se\nla loro addizione/sottrazione sia uguale a 8\n"
+);
+
+let x = 10;
+let y = 2 + "\n";
+
+if (x === 8) {
+  console.log("Il valore di x è 8");
+} else if (y === 8) {
+  console.log("Il valore di y è 8");
+} else if (x - y === 8) {
+  console.log("La sottrazione tra x e y ha valore 8");
+} else {
+  console.log("Né x né y hanno come valore 8");
+}
 
 /* ESERCIZIO EXTRA 2
 Stai lavorando su un sito di e-commerce. Stai salvando il saldo totale del carrello dell'utente in una variabile "totalShoppingCart".
